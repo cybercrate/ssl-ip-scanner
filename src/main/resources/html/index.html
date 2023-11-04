@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <title>SSL IP Scanner</title>
+</head>
+<body>
+    <h1>SSL IP Scanner</h1>
+
+    <iframe name="dummy-frame" id="dummy-frame" style="display: none;"></iframe>
+
+    <form action="/scan" method="post" target="dummy-frame">
+        <label for="ip">IP address: </label>
+        <input type="text" id="ip" name="ip" pattern="\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\/\d{1,2}$" required>
+
+        <label for="threads"><br>Threads count: </label>
+        <input type="number" id="threads" name="threads" required>
+
+        <input type="submit">
+    </form>
+</body>
+</html>
